@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.titulo {
+    font-size: 90px;
+    font-style: italic;
+    font-weight: 100;
+    font-weight: bolder;
+
+}
+
+.copy {
+    font-size: 30px;
+    color: rgba(100, 99, 84, 0.973);
+}
+
+.developer {
+    font-size: 25px;
+    color: rgba(41, 40, 34, 0.973);
+}
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.466) 0%, rgba(251, 194, 235, 0.486) 100%), url(image/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head {
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.caja0 i {
+    color: #e2a011;
+}
+
+.caja0 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.info h4 {
+    color: rgb(9, 9, 14);
+    font-style: oblique;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.info p {
+    font-size: 20px;
+    font-weight: 100;
+    color: dodgerblue;
+}
+
+
+button[type=submit] {
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+
+.btn {
+    /* Color del texo */
+
+    color: #0099CC;
+    /* Eliminar color de fondo */
+
+    background: transparent;
+    /* Grosor del borde, estilo de línea y color */
+
+    border: 2px solid #0099CC;
+    /* Añadir esquinas curvadas */
+
+    border-radius: 6px;
+    /* Poner texto en mayúsculas */
+
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+/* Al poner el curso encima (hover) */
+
+.btn:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+/* ----------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+} */
+
+/* .page {
+     background: url(img/foto.jpg) center;
+     height: 100vh;  
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+} */
+
+.fondo_transparente {
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.226);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.modal {
+    background: linear-gradient(0deg, white 70%, crimson 30%);
+    width: 70%;
+    height: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.modal_cerrar {
+    background: white;
+    position: absolute;
+    right: 1%;
+    color: crimson;
+    top: 3%;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal_titulo {
+    color: white;
+    font-size: 40px;
+}
+
+.modal_mensaje {
+    padding: 10px 30px;
+    color: #0099CC;
+}
+
+.modal_botones {
+    width: 100%;
+    background: whitesmoke;
+    border-top: whitesmoke 1px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .boton {
+     background: white;
+             padding: 8px 30px;
+             color: crimson;
+             text-decoration: none;
+             border-radius: 25px;
+             border:1px solid crimson 
+} */
+
+/* .boton:hover {
+    background: crimson;
+    color: white;
+} */
+
+.caja0 i:hover {
+    color: #eebd52;
+}
+.titulo-proyecto{
+    color:#0a5375;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-style: oblique;
+    padding-bottom: 5%;
+}
