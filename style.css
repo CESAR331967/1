@@ -16,12 +16,12 @@
 
 .copy {
     font-size: 30px;
-    color: rgba(100, 99, 84, 0.973);
+    color: rgba(27, 26, 12, 0.973);
 }
 
 .developer {
     font-size: 25px;
-    color: rgba(41, 40, 34, 0.973);
+    color: rgba(53, 51, 42, 0.973);
 }
 
 .header {
@@ -123,18 +123,7 @@ button[type=submit] {
 /* ----------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-/* body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-} */
 
-/* .page {
-     background: url(img/foto.jpg) center;
-     height: 100vh;  
-     display: flex;
-    justify-content: center;
-    align-items: center; 
-} */
 
 .fondo_transparente {
     top: 0;
@@ -196,19 +185,6 @@ button[type=submit] {
     justify-content: space-evenly;
 }
 
-/* .boton {
-     background: white;
-             padding: 8px 30px;
-             color: crimson;
-             text-decoration: none;
-             border-radius: 25px;
-             border:1px solid crimson 
-} */
-
-/* .boton:hover {
-    background: crimson;
-    color: white;
-} */
 
 .caja0 i:hover {
     color: #eebd52;
