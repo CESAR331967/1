@@ -44,3 +44,35 @@ document.getElementsByClassName("modal_cerrar")[0].addEventListener("click", fun
     document.getElementById("div-element").innerHTML = 'De formación inicial Técnica Electrónica, lo cual desempeñe durante muchos años, no me ha excluido de la programación, ya que esta se encontraba en placas y módulos programables. Haciendo relevante el lenguaje, ensamblador y luego dando paso el C y C++ ejemplo: Arduino'
     return false
  }
+//  ----------------------------Formulario De Contacto---------------------------
+const nombre = document.getElementById("name")
+const email = document.getElementById("email")
+const message = document.getElementById("message")
+const form = document.getElementById("form")
+const parrafo = document.getElementById("warnings")
+
+form.addEventListener("submit", e=>{
+    e.preventDefault()
+    let warnings = ""
+    let entrar = false
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+    parrafo.innerHTML = ""
+    if(nombre.value.length <4){
+        warnings += `El nombre no es valido <br>`
+        entrar = true
+    }
+    if(!regexEmail.test(email.value)){
+        warnings += `El email no es valido <br>`
+        entrar = true
+    }
+    if(message.value.length < 4){
+        warnings += `No Hay mensaje <br>`
+        entrar = true
+    }
+
+    if(entrar){
+        parrafo.innerHTML = warnings
+    }else{
+        parrafo.innerHTML = "Enviado"
+    }
+})

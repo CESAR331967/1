@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- Hoja de Estilos -->
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>CV</title>
 </head>
 
 <body>
@@ -111,18 +111,18 @@
                     </div>
                 </div>
                 <div class="card" style="max-width: 18rem;">
-                  <img src="../image/c.png" class="card-img-top" alt="no se encontrado imagen">
+                    <img src="../image/c.png" class="card-img-top" alt="no se encontrado imagen">
                     <div class="card-body">
                         <p class="card-text">Crud con Bootstrap</p>
                     </div>
                 </div>
                 <div class="card" style="max-width: 18rem;">
-                  <img src="../image/d.png" class="card-img-top" alt="no se encontrado imagen">
+                    <img src="../image/d.png" class="card-img-top" alt="no se encontrado imagen">
                     <div class="card-body">
                         <p class="card-text">Lista Productos Local Storage</p>
                     </div>
                 </div>
-             
+
             </div>
 
             <div class="caja1 mt-5 col-12 col-md-6">
@@ -186,9 +186,7 @@
             <div class="caja3 col-12 col-md-12 col-lg-12 mt-4">
                 <div class="section-title" id="Contacto">
                     <h2>Contacto</h2>
-                    <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+
                 </div>
             </div>
             <div class="caja4 col-12 col-md-12 col-lg-6  py-5">
@@ -248,36 +246,30 @@
                     </div>
 
                 </div>
-                <!-- 
-                </div>// -->
+
             </div>
 
             <div class="caja5 col-12 col-md-12 col-lg-6  py-3">
-                <!-- <h2>caja5</h2> -->
+
                 <div class=" mt-5 mt-lg-0 d-flex align-items-stretch justify-content-center">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <form id="form" action="" method="post" role="form">
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="name">Nombre</label>
                                 <input type="text" name="name" class="form-control" id="name" required="">
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="name"> Email</label>
+                                <label for="name">Email</label>
                                 <input type="email" class="form-control" name="email" id="email" required="">
                             </div>
                         </div>
+                   
                         <div class="form-group">
-                            <label for="name">Subject</label>
-                            <input type="text" class="form-control" name="subject" id="subject" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Message</label>
-                            <textarea class="form-control" name="message" rows="10" required=""></textarea>
+                            <label for="name">Mensaje</label>
+                            <textarea class="form-control" name="message" rows="10" required="" id="message"></textarea>
                         </div>
                         <div class="my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message d-block">TypeError: Failed to fetch</div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                            <p class="warnings" id="warnings"></p>
                         </div>
                         <div class="text-center"><button type="submit">Enviar</button></div>
                     </form>
