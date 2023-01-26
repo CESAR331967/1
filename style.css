@@ -138,7 +138,7 @@ button[type=submit] {
 .modal {
     background: linear-gradient(0deg, white 70%, crimson 30%);
     width: 70%;
-    height: 65%;
+    height: 75%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -196,3 +196,9 @@ button[type=submit] {
     font-style: oblique;
     padding-bottom: 5%;
 }
+@media (max-width: 400px) {
+    .modal {
+        width: 90%;
+        height: 95%;
+    }
+  }
