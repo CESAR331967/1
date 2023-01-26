@@ -196,7 +196,7 @@ button[type=submit] {
     font-style: oblique;
     padding-bottom: 5%;
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .modal {
         width: 90%;
         height: 95%;
