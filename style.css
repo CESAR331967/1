@@ -3,34 +3,33 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
-
-}
-
-.titulo {
-    font-size: 90px;
-    font-style: italic;
-    font-weight: 100;
-    font-weight: bolder;
-
-}
-
-.copy {
-    font-size: 30px;
-    color: rgba(27, 26, 12, 0.973);
-}
-
-.developer {
-    font-size: 25px;
-    color: rgba(53, 51, 42, 0.973);
 }
 
 .header {
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.466) 0%, rgba(251, 194, 235, 0.486) 100%), url(image/3.jpg);
+    background-image: linear-gradient(to top, rgb(23, 22, 24) 0%, rgba(251, 194, 235, 0.096) 100%), url(image/3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+.titulo {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 100;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.copy {
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.developer {
+    font-size: 25px;
+    color: aliceblue;
 }
 
 .head {
@@ -44,84 +43,87 @@
     color: white;
 }
 
-.caja0 i {
-    color: #e2a011;
+.border {
+    background: #f2f6f7de;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 16px 0px rgba(50, 50, 50, 0.75);
 }
 
-.caja0 {
-    margin-top: 10%;
-    margin-bottom: 10%;
+.paralax-mf {
+    /* background-image: url(image/counters-bg.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    position: relative;
+    padding: 8rem 0;
+    padding-top: 8rem;
+    padding-right: 0px;
+    padding-bottom: 8rem;
+    padding-left: 0px;
+    /* opacity: 0.7; */
+
 }
 
-.info h4 {
-    color: rgb(9, 9, 14);
-    font-style: oblique;
-    font-family: 'Open Sans', sans-serif;
 
+.overlay-mf {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
 }
 
-.info p {
-    font-size: 20px;
-    font-weight: 100;
-    color: dodgerblue;
+.overlay-mf {
+    background-color: #0078ff;
 }
-
 
 button[type=submit] {
-    background: #149ddd;
+    background: #fff;
     border: 0;
     padding: 10px 24px;
-    color: #fff;
+    color: #000;
     transition: 0.4s;
     border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
-.btn {
-    /* Color del texo */
-
-    color: #0099CC;
-    /* Eliminar color de fondo */
-
-    background: transparent;
-    /* Grosor del borde, estilo de línea y color */
-
-    border: 2px solid #0099CC;
-    /* Añadir esquinas curvadas */
-
-    border-radius: 6px;
-    /* Poner texto en mayúsculas */
-
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    text-decoration: none;
-    text-transform: uppercase;
+.fa-sharp {
+    font-size: 40px;
 }
 
-.btn {
-    background-color: white;
-    color: black;
-    border: 2px solid #008CBA;
+.title {
+    font-size: 23px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-/* Al poner el curso encima (hover) */
-
-.btn:hover {
-    background-color: #008CBA;
-    color: white;
+.dato,
+p {
+    font-size: 18px !important;
+    color: #fff;
+    font-style: oblique;
 }
 
-/* ----------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* --------------Portfolio--------------- */
+.border {
+    background-color: #149ddd;
+}
+
+.boton {
+    color: #fff;
+}
+
+.caja0,
+h2 {
+    color: #fff;
+}
+
+/* ------------Modal---------------- */
 
 
 
@@ -137,8 +139,8 @@ button[type=submit] {
 
 .modal {
     background: linear-gradient(0deg, white 70%, crimson 30%);
-    width: 70%;
-    height: 75%;
+    width: 600px;
+    height: 100px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -154,9 +156,9 @@ button[type=submit] {
 .modal_cerrar {
     background: white;
     position: absolute;
-    right: 1%;
+    right: 20px;
     color: crimson;
-    top: 3%;
+    top: 20px;
     width: 40px;
     height: 40px;
     border-radius: 25px;
@@ -173,7 +175,7 @@ button[type=submit] {
 
 .modal_mensaje {
     padding: 10px 30px;
-    color: #0099CC;
+
 }
 
 .modal_botones {
@@ -186,19 +188,183 @@ button[type=submit] {
 }
 
 
-.caja0 i:hover {
-    color: #eebd52;
+        /* --------------------Breakpoints Modal---------------- */
+@media (max-width: 1400px) {
+    .modal {
+        width: 80%;
+        height: 75%;
+    }
+
+    .modal_mensaje {
+        color: #0078ff;
+        font-size: 25px;
+    }
 }
-.titulo-proyecto{
-    color:#0a5375;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 100;
-    font-style: oblique;
-    padding-bottom: 5%;
+
+@media (max-width: 1280px) {
+    .modal {
+        width: 80%;
+        height: 70%;
+    }
+
+    .modal_mensaje {
+        margin-top: 100px;
+        font-size: 30px;
+    }
 }
+
+@media (max-width: 1024px) {
+    .modal {
+        width: 80%;
+        height: 90%;
+    }
+
+    .modal_mensaje {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 820px) {
+    .modal {
+        width: 70%;
+        height: 80%;
+    }
+
+    .modal_mensaje {
+
+        margin-top: 100px !important;
+        ;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 540px) {
+    .modal {
+        width: 80%;
+        height: 80%;
+    }
+
+    .modal_mensaje {
+        margin-top: 50px !important;
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 420px) {
     .modal {
-        width: 90%;
-        height: 95%;
+        width: 80%;
+        height: 80%;
+    }
+
+    .modal_mensaje {
+        margin-top: 50px !important;
+        font-size: 12px;
+    }
+}
+
+
+/* ------------------Modal2 Imagenes------------ */
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+
+  #myImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg2:hover {opacity: 0.7;}
+
+  #myImg3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg3:hover {opacity: 0.7;}
+
+  #myImg4 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg4:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal2-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal2-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal2-content {
+      width: 100%;
     }
   }
+  
